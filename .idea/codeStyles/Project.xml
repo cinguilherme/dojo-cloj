@@ -1,59 +1,33 @@
 <component name="ProjectCodeStyleConfiguration">
   <code_scheme name="Project" version="173">
     <ClojureCodeStyleSettings>{
-  :clojure.core/case :only-indent
-  :clojure.core/cond-&gt; :only-indent
-  :clojure.test/testing :only-indent
-  :common-datomic.functions/constraint-fn :only-indent
-  :common-graphql.lacinia.sweet/definput :only-indent
-  :common-graphql.lacinia.sweet/defobject :only-indent
-  :common-graphql.lacinia.sweet/defresolver :only-indent
-  :common-graphql.lacinia.sweet/defunion :only-indent
+  :common-datomic.functions.constraint-fn :only-indent
+  :clojure.test.check.clojure-test/defspec :only-indent
+  :clojure.test.check.properties/for-all :only-indent
+  :common-datomic.test-helpers/let-entities :only-indent
   :common-http-client.components.mock-http/with-responses :only-indent
   :common-io.interceptors.doc/defint :only-indent
   :common-test.http/as-customer :only-indent
   :common-test.http/with-scopes :only-indent
-  :common-test.i18n.helpers/flow-br :only-indent
   :common-test.postman.core/as-of :only-indent
   :common-test.postman.e2e/flow :only-indent
   :common-test.postman.flow/flow :only-indent
   :cursive.formatting/align-binding-forms true
   :cursive.formatting/imports-use-vectors true
+  :cursive.formatting/one-space-lists true
   :devcards.core/defcard :only-indent
   :devcards.core/defcard-rg :only-indent
   :devcards.core/deftest :only-indent
-  :inductor.components.warmup/with-elapsed-time :only-indent
-  :integration.aux.init/defflow :only-indent
   :io.pedestal.http.route.definition/defroutes :only-indent
   :manifold.deferred/let-flow :only-indent
   :midje.sweet/fact :only-indent
-  :midje.sweet/facts 0
+  :midje.sweet/facts :only-indent
   :midje.sweet/tabular :only-indent
-  :nubank.shuffle.common.fulcro.db-helpers/load :only-indent
-  :nubank.shuffle.common.ui.buttons/button :only-indent
-  :nubank.shuffle.common.ui.dropdown/dropdown :only-indent
-  :nubank.shuffle.common.ui.grid-system/row :only-indent
-  :nubank.shuffle.common.ui.widget/mutation-locker :only-indent
-  :nubank.shuffle.common.ui.widget/widget-info :only-indent
-  :nubank.shuffle.modules.savings.purchases.components/create-complaint-form :only-indent
   :pedestal.swagger.core/defhandler :only-indent
   :postman.aux.account/created-at :only-indent
-  :postman.aux.init/flow-with-defaults :only-indent
-  :postman.mutations.submit-survey/fact :only-indent
-  :postman.mutations.submit-survey/flow 0
   :schema.core/defmethod :only-indent
   :shuffle.test-helpers/with-rendered-component :only-indent
   :shuffle.test-helpers/with-subscriptions :only-indent
-  :state-flow.api/flow :only-indent
-  :state-flow.api/match? 4
-  :state-flow.assertions.matcher-combinators/match? :only-indent
-  :state-flow.cljtest/defflow :only-indent
-  :state-flow.core/flow :only-indent
-  :state-flow.helpers.core/with-redefs :only-indent
-  :state-flow.helpers.delta/with-produced-messages :only-indent
-  :state-flow.helpers.http/with-responses :only-indent
-  :state-flow.labs.state/with-redefs :only-indent
-  :unit.inductor.reborn.db.datomic.second-presentment-reversal-advice/let-entities :only-indent
 }</ClojureCodeStyleSettings>
   </code_scheme>
 </component>

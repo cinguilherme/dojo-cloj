@@ -15,7 +15,13 @@
     (is (match? #{#{"d" "ccc"}
                   #{"ee" "ff"}}
                 (anagram/two-words-of-same-size-as "aaaa"
-                                              #{"bbbbb" "ccc" "d" "ee" "ff"})))))
+                                                   #{"bbbbb" "ccc" "d" "ee" "ff"})))))
+
+(deftest two-words-that-together-make-an-anagram
+  (testing "Return two word tuples from the given dictionary with the combined are a anagram of the first"
+    (is (match? #{#{"aaa" "a"}}
+                (anagram/only-anagramic "aaaa"
+                                        #{#{"aaa" "a"} #{"b" "acr"}})))))
 
 (deftest is-anagram?-test
   (testing "return true when is an anagram"
