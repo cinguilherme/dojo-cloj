@@ -279,5 +279,22 @@
   (= (frequencies first)
      (frequencies second)))
 
+(defn same-size-and-not-equal [word x y]
+  (and (not= x y)
+       (= (count word)
+          (+ (count x) (count y)))))
+
 (defn two-words-of-same-size-as [word dictionary]
-  )
+  ;dictionary
+  ;word (combinação de tamanhos 'aaaa' 1 3, 2 2)
+
+  ;dicionario agrupa pelo tamanho das palavras
+  ;dois
+
+  ;for combinando dicionario com dicionario
+    ;descarta quando é a mesma palavra
+    ;descarta sum dos lenght != lenght de word
+  (set (for [x dictionary
+             y dictionary
+             :when (same-size-and-not-equal word x y)]
+         #{x y})))

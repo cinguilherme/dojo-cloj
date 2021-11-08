@@ -12,9 +12,9 @@
 
 (deftest two-words-of-same-size-as-test
   (testing "Return two word tuples from the given dictionary with the combined size as the given word"
-    (is (match? (m/in-any-order [#{"ccc" "d"}
-                            #{"ee" "ff"}])
-           (anagram/two-words-of-same-size-as "aaaa"
+    (is (match? #{#{"d" "ccc"}
+                  #{"ee" "ff"}}
+                (anagram/two-words-of-same-size-as "aaaa"
                                               #{"bbbbb" "ccc" "d" "ee" "ff"})))))
 
 (deftest is-anagram?-test
